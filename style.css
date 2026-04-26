@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f0f0f0;
+  font-family: Roboto, sans-serif;
+}
+
+.input-div {
+  gap: 10px;
+  padding: 0 20px;
+}
+
+.nav-color-div {
+  border-radius: 20px 20px 0 0;
+  height: 30px;
+  background-color: #E5A52F;
+}
+
+.task-h1 {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.task-tracker-form {
+  position: relative;
+  width: 330px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.text-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+#down-icon {
+  position: absolute;
+  top: 97px;
+  right: 30px;
+  width: 29px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#down-icon.sort-down {
+  background-image: url("./img/down.svg");
+}
+
+#down-icon.sort-down:hover {
+  background-image: url("./img/down-hover.svg");
+}
+
+#down-icon.sort-up {
+  background-image: url("./img/up.svg");
+}
+
+#down-icon.sort-up:hover {
+  background-image: url("./img/up-hover.svg");
+}
+
+#delete-icon {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  left: 260px;
+  top: 32px;
+  display: inline-block;
+  background-image: url("./img/delete.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+#delete-icon:hover {
+  background-image: url("./img/delete-hover.svg");
+}
+
+.button-div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.add-button {
+  padding: 15px 20px;
+  background-color: #b074ff;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  position: relative;
+  left: 8%;
+  z-index: 1;
+  font-size: 14px;
+}
+
+.add-task-button {
+  padding: 15px 20px;
+  background-color: #833AE0;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  width: 150px;
+  position: relative;
+  right: 10%;
+  font-size: 14px;
+}
+
+.tasks-list {
+  padding: 10px 20px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 8px;
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+
+.task-number {
+  font-weight: bold;
+  color: #333;
+  min-width: 25px;
+}
+
+.task-text {
+  flex: 1;
+  color: #333;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.edit-btn,
+.delete-btn,
+.confirm-edit-btn {
+  padding: 6px 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.edit-task-icon,
+.delete-task-icon,
+.add-task-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.edit-task-icon {
+  background-image: url("./img/edit-icon.svg");
+}
+
+.edit-btn:hover .edit-task-icon {
+  background-image: url("./img/edit-icon-hover.svg");
+}
+
+.delete-task-icon {
+  background-image: url("./img/delete.svg");
+}
+
+.delete-btn:hover .delete-task-icon {
+  background-image: url("./img/delete-hover.svg");
+}
+
+.add-task-icon {
+  background-image: url("./img/add-icon.svg");
+}
+
+.confirm-edit-btn:hover .add-task-icon {
+  background-image: url("./img/add-icon-hover.svg");
+}
